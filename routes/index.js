@@ -25,7 +25,7 @@ router.get('/special-header', function(req, res, next) {
   const payload=jwt.verify(token,process.env.TOKEN_SECRET);
   res.json({
     emoji: "⛹",
-    email = payload.email
+    email: payload.email
   });
 });
 
